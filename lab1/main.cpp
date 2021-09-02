@@ -3,7 +3,6 @@
 using namespace std;
 
 int main(int argc, char **argv){
-	cout<<"CS3241 Lab 1\n\n";
     srand((uint32_t)time(NULL));
 
 	pglInit();
