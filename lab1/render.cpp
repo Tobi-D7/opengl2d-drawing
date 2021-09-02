@@ -251,7 +251,7 @@ void finish_render(){
     frame_manager->update();
     
     // Re-render to start next frame
-    glutPostRedisplay();
+   // glutPostRedisplay();
 }
 
 void draw_particles(){
