@@ -25,16 +25,13 @@ jobs:
           #lua
           cd ..
           git clone https://github.com/NPI-D7/BCSTM-Player.git
-          cd Paint3ds
+          cd opengl2d-drawing
           mkdir -p app/
           #mkdir -p extlibs/lua/
           cp -r ../BCSTM-Player/app/* app/
           #cp -r ../lua/*.h* extlibs/lua/
           #cp -r ../lua/*.md extlibs/lua/
           #RenderD7
-          cd ..
-          git clone https://github.com/NPI-D7/RenderD7.git
-          cd Paint3ds
           #config
           git config --global user.email "tobid7@outlook.de"
           git config --global user.name "Tobi-D7"
