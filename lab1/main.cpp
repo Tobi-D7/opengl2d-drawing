@@ -14,6 +14,7 @@ int main(int argc, char **argv){
              pglSelectScreen(GFX_TOP, GFX_LEFT);
              display();
              reshape();
+             pglSwapBuffers();
         }
         pglExit();
 	return 0;
