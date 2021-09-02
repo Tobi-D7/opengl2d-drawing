@@ -15,7 +15,8 @@
 #include <stdio.h>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
-
+#include <3ds.h>
+#include <GL/picaGL.h>
 /* Include header files depending on platform */
 #ifdef _WIN32
 #include "glut.h"
