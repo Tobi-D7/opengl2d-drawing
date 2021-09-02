@@ -11,6 +11,7 @@ int main(int argc, char **argv){
 	init();
         while (aptMainLoop())
         {
+             pglSelectScreen(GFX_TOP, GFX_LEFT);
              display();
              reshape();
         }
