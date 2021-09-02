@@ -8,16 +8,12 @@ int main(int argc, char **argv){
     printControls();
 
 	pglInit();
-	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
-	glutInitWindowSize (600, 600);
-	glutInitWindowPosition (50, 50);
-	glutCreateWindow (argv[0]);
-	init ();
-	glutDisplayFunc(display);
-	glutReshapeFunc(reshape);
-	//glutMouseFunc(mouse);
-	glutKeyboardFunc(keyboard);
-	glutMainLoop();
-
+	init();
+        while (aptMainLoop())
+        {
+             display();
+             reshape();
+        }
+        pglExit();
 	return 0;
 }
